@@ -11,11 +11,7 @@ public class Homework7 {
 
         int[][] mass2d1 = new int[10][10];
         fillMass2d(mass2d1, 1);
-
-        for (int i = 0; i < mass2d1[0].length; i++) {
-            mass2d1[i][i] = 0;
-        }
-
+        diagonalsOfSquare(mass2d1);
         printMass2d(mass2d1);
 
         int[][] mass2d2 = new int[10][10];
@@ -30,10 +26,26 @@ public class Homework7 {
 
         int[][] mass2d3 = new int[10][10];
         fillMass2d(mass2d3, 4);
-        for (int i = 0; i < mass2d3[1].length; i++)
+        for (int i = 0; i < mass2d3[1].length; i++) {
             mass2d3[1][i] = 0;
+        }
         printMass2d(mass2d3);
         System.out.println(sumString(mass2d3));
+    }
+
+    private static void diagonalsOfSquare(int[][] mass2d1) {
+        for (int i = 0; i < mass2d1[0].length; i++) {
+            for (int j = 0; j < mass2d1[i].length; j++) {
+                if (mass2d1[i] == mass2d1[j])
+                    mass2d1[i][i] = 0;
+                {
+                    if (i + j == mass2d1.length - 1) {
+                        mass2d1[i][j] = 0;
+                    }
+                }
+            }
+
+        }
     }
 
     private static int sumString(int[][] in) {
