@@ -4,6 +4,6 @@ public class User {
     private String surname;
     private String name;
     private String patronymic;
-    private Integer age;
+    private int age;
     private String email;
 }
