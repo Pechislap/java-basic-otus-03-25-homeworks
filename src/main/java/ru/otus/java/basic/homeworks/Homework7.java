@@ -11,8 +11,11 @@ public class Homework7 {
 
         int[][] mass2d1 = new int[10][10];
         fillMass2d(mass2d1, 1);
-        for (int i = 0; i < mass2d1.length; i++)
+
+        for (int i = 0; i < mass2d1[0].length; i++) {
             mass2d1[i][i] = 0;
+        }
+
         printMass2d(mass2d1);
 
         int[][] mass2d2 = new int[10][10];
