@@ -23,6 +23,13 @@ public class Homework10 {
                 System.out.println();
             }
         }
+
+        Box box = new Box(false, "Книга");
+        box.setColour("Red");
+        box.Info();
+        System.out.println();
+        box.Closed();
+        box.putThing();
     }
 }
 

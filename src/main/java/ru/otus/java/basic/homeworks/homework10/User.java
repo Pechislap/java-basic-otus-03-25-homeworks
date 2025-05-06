@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework10;
 
+import java.time.Year;
+
 public class User {
     public int getAge;
     private String surname;
@@ -48,7 +50,7 @@ public class User {
         this.email = email;
     }
     public int getAge(int i){
-        return 2025 - birthYear;
+        return Year.now().getValue() - birthYear;
     }
 
     public User(String surname, String name, String patronymic, int birthYear, String email) {
