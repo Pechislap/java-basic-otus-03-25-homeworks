@@ -64,7 +64,7 @@ public class User {
 
     public void Info() {
         System.out.println("ФИО: " + surname + " " + name + " " + patronymic);
-        System.out.println("Гож рождения: " + birthYear);
+        System.out.println("Год рождения: " + birthYear);
         System.out.println("email: " + email);
     }
 }
