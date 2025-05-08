@@ -64,9 +64,11 @@ public class Box {
         }
         if (removeThing != this.thing){
             System.out.println(removeThing + " нет в коробке");
+            return;
         }
         if (this.thing == removeThing) {
             System.out.println(thing + " вынута из коробки");
+            return;
         }
         this.thing = null;
     }
