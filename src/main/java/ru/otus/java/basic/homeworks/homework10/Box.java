@@ -68,8 +68,8 @@ public class Box {
         }
         if (this.thing == removeThing) {
             System.out.println(thing + " вынута из коробки");
-            return;
         }
+
         this.thing = null;
     }
 }
