@@ -30,8 +30,6 @@ public class Homework10 {
         box.close();
         box.open();
         box.removeThing("Книга");
-        //box.close();
-        box.putThing("hh");
     }
 }
 
