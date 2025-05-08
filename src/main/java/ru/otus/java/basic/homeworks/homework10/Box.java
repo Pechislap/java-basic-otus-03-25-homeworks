@@ -24,7 +24,7 @@ public class Box {
 
     }
 
-    public void boxInfo() {
+    public void info() {
         System.out.println("Размер: " + size);
         System.out.println("Цвет: " + color);
         System.out.println();

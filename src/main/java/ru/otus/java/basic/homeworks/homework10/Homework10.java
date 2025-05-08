@@ -24,7 +24,7 @@ public class Homework10 {
             }
         }
         Box box = new Box(20, "Red");
-        box.boxInfo();
+        box.info();
         box.open();
         box.putThing("Книга");
         box.close();
