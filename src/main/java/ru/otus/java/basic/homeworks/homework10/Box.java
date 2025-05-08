@@ -1,70 +1,76 @@
 package ru.otus.java.basic.homeworks.homework10;
 
 public class Box {
-    private final int width = 10;
-    private final int height = 15;
-    private final int length = 25;
-    private String colour;
+    private int size;
+    private String color;
     private boolean closed;
-    private boolean boxEmpty;
+    private boolean empty;
     private String thing;
 
 
-
-    public String getColour() {
-        return colour;
+    public String getColor() {
+        return color;
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public String getThing1() {
-        return thing;
+    public Box(int size, String colour) {
+        this.size = size;
+        this.color = colour;
+        this.closed = true;
+        this.thing = null;
+
     }
 
-    public void setThing(String thing) {
-        this.thing = thing;
+    public void boxInfo() {
+        System.out.println("Размер: " + size);
+        System.out.println("Цвет: " + color);
+        System.out.println();
     }
 
-
-    public int getWidth() {
-        return width;
+    public void open() {
+        closed = false;
+        System.out.println("Коробка открыта");
     }
 
-    public int getHeight() {
-        return height;
+    public void close() {
+        closed = true;
+        System.out.println("Коробка закрыта");
     }
 
-    public int getLength() {
-        return length;
-    }
-
-    public Box(boolean closed, String thing) {
-        this.colour = "Black";
-        this.closed = closed;
-        this.thing = thing;
-    }
-
-    public void Info() {
-        System.out.println("Ширина " + width);
-        System.out.println("Высота " + height);
-        System.out.println("Длинна " + length);
-        System.out.println("Цвет " + colour);
-    }
-
-    public void Closed() {
-        if (this.closed == true) {
-            System.out.println("Коробка закрыта, что бы положить предмет, откройте коробку");
-        } else {
-            System.out.println("Коробка открыта и пуста, положите предмет");
+    public void putThing(String thing) {
+        if (closed == true) {
+            System.out.println("Коробка закрыта, откройте коробку что-бы положить вещь");
+            return;
         }
-    }
-
-    public void putThing() {
-        if (this.closed == false) {
-            System.out.println(this.thing + " в коробке");
+        if (this.thing != null) {
+            System.out.println("Освободите коробку, что-бы положить " + thing);
+            return;
         }
+        this.thing = thing;
+        System.out.println(thing + " в коробке");
     }
 
+    public void removeThing(String removeThing) {
+        if (closed == true) {
+            System.out.println("Коробка закрыта, откройте коробку что-бы вытащить вещь");
+            return;
+        }
+        if (this.thing == null) {
+            System.out.println("Из коробки нечего вытаскивать");
+            return;
+        }
+        if (removeThing != this.thing){
+            System.out.println(removeThing + " нет в коробке");
+        }
+        if (this.thing == removeThing) {
+            System.out.println(thing + " вынута из коробки");
+        }
+        this.thing = null;
+    }
 }
+
+
+
