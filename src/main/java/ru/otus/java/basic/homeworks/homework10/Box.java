@@ -62,11 +62,11 @@ public class Box {
             System.out.println("Из коробки нечего вытаскивать");
             return;
         }
-        if (removeThing != this.thing){
+        if (!removeThing.equals(this.thing)){
             System.out.println(removeThing + " нет в коробке");
             return;
         }
-        if (this.thing == removeThing) {
+        if (this.thing.equals(removeThing)) {
             System.out.println(thing + " вынута из коробки");
         }
 
