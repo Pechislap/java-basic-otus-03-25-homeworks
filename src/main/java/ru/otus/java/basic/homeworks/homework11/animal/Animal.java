@@ -9,6 +9,7 @@ public class Animal {
     protected int runEnduranceCosts;
     protected int swimEnduranceCosts;
     protected boolean canSwim;
+    protected float time;
 
     public Animal(String name,
                   float runSpeed,
@@ -16,8 +17,7 @@ public class Animal {
                   int endurance,
                   int runEnduranceCosts,
                   int swimEnduranceCosts,
-                  boolean canSwim)
-    {
+                  boolean canSwim) {
         this.name = name;
         this.runSpeed = runSpeed;
         this.swimSpeed = swimSpeed;
@@ -25,5 +25,19 @@ public class Animal {
         this.runEnduranceCosts = runEnduranceCosts;
         this.swimEnduranceCosts = swimEnduranceCosts;
         this.canSwim = true;
+    }
+
+    public float run(int distance) {
+
+        float time = distance / runSpeed;
+        int expendedEndurance = distance * runEnduranceCosts;
+        if (expendedEndurance > endurance) {
+            System.out.println();
+            System.out.println(name + " пробежал " + distance + " м, появилось состояние усталости.");
+
+        } else {
+            System.out.println(name + " пробежал " + distance + " м за " + time + " сек");
+        }
+        return time;
     }
 }

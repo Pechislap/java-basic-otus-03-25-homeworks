@@ -6,6 +6,7 @@ import ru.otus.java.basic.homeworks.homework11.animal.Horse;
 
 public class Homework11 {
     public static void main(String[] args) {
+
         Cat cat = new Cat("Murzik",
                 1,
                 0,
@@ -29,6 +30,10 @@ public class Homework11 {
                 1,
                 4,
                 true);
+
+        cat.run(20);
+        dog.run(30);
+        horse.run(100);
 
     }
 }
