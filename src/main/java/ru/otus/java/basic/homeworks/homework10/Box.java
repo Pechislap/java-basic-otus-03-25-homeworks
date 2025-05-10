@@ -4,7 +4,6 @@ public class Box {
     private int size;
     private String color;
     private boolean closed;
-    private boolean empty;
     private String thing;
 
 
