@@ -9,7 +9,6 @@ public class Animal {
     protected int runEnduranceCosts;
     protected int swimEnduranceCosts;
     protected boolean canSwim;
-    protected float time;
 
     public Animal(String name,
                   float runSpeed,
