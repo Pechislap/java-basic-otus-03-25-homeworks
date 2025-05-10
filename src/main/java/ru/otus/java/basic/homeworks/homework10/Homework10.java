@@ -18,8 +18,8 @@ public class Homework10 {
         };
         System.out.println();
         for (int i = 0; i < users.length; i++) {
-            if (users[i].getAge(i) > 40) {
-                users[i].Info();
+            if (users[i].getAge() > 40) {
+                users[i].info();
                 System.out.println();
             }
         }

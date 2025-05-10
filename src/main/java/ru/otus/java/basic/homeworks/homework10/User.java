@@ -3,7 +3,7 @@ package ru.otus.java.basic.homeworks.homework10;
 import java.time.Year;
 
 public class User {
-    public int getAge;
+
     private String surname;
     private String name;
     private String patronymic;
@@ -50,7 +50,7 @@ public class User {
         this.email = email;
     }
 
-    public int getAge(int i) {
+    public int getAge() {
         return Year.now().getValue() - birthYear;
     }
 
@@ -62,7 +62,7 @@ public class User {
         this.email = email;
     }
 
-    public void Info() {
+    public void info() {
         System.out.println("ФИО: " + surname + " " + name + " " + patronymic);
         System.out.println("Год рождения: " + birthYear);
         System.out.println("email: " + email);
