@@ -7,14 +7,21 @@ public class Cat extends Animal {
             float swimSpeed,
             int endurance,
             int runEnduranceCosts,
-            int swimEnduranceCosts,
-            boolean canSwim) {
+            int swimEnduranceCosts) {
         super(name,
                 runSpeed,
                 swimSpeed,
                 endurance,
                 runEnduranceCosts,
-                swimEnduranceCosts,
-                canSwim);
+                swimEnduranceCosts);
     }
+
+    @Override
+    public float swim(int distance) {
+        System.out.println();
+        System.out.print(name + " не умеет плавать ");
+        return 0;
+    }
+
+
 }
