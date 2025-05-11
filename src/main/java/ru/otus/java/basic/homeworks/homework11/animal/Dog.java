@@ -7,12 +7,14 @@ public class Dog extends Animal {
             float swimSpeed,
             int endurance,
             int runEnduranceCosts,
-            int swimEnduranceCosts) {
+            int swimEnduranceCosts,
+            int distance) {
         super(name,
                 runSpeed,
                 swimSpeed,
                 endurance,
                 runEnduranceCosts,
-                swimEnduranceCosts);
+                swimEnduranceCosts,
+                distance);
     }
 }
