@@ -27,6 +27,14 @@ public class Animal {
         this.distance = distance;
     }
 
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
     public float run() {
 
         int distance = this.distance;
