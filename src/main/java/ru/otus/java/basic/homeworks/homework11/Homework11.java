@@ -13,6 +13,8 @@ public class Homework11 {
 
         Horse horse = new Horse("Spirit", 10, 3, 3000, 1, 4, 500);
 
+        cat.setDistance(10);
+        System.out.println();
         System.out.printf("за %.2f cек%n", cat.run());
         System.out.printf("за %.2f cек%n", dog.run());
         System.out.printf("за %.2f cек%n", horse.run());
@@ -24,5 +26,7 @@ public class Homework11 {
         cat.info();
         dog.info();
         horse.info();
+
+
     }
 }
