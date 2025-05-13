@@ -41,7 +41,6 @@ public class Animal {
         float time = distance / runSpeed;
         int expendedEndurance = distance * runEnduranceCosts;
         if (expendedEndurance > endurance) {
-            System.out.println();
             System.out.print(name + " появилось состояние усталости, не смог пробежать " + distance + " м ");
             return -1;
         } else {
@@ -56,16 +55,15 @@ public class Animal {
         int runTired = endurance - expendedEndurance1;
         int swimTired = endurance - expendedEndurance2;
 
-        System.out.println();
         if (runTired <= 0) {
-            System.out.println(name + " не может бежать, запас выносливоти = " + runTired);
+            System.out.println(name + " не может бежать, запас выносливости = " + runTired);
         } else {
             System.out.println(name + " готов бежать, запас выносливости = " + runTired);
         }
         if (swimTired <= 0) {
-            System.out.println(name + " не может плыть, запас выносливоти = " + swimTired);
+            System.out.println(name + " не может плыть, запас выносливости = " + swimTired);
         } else {
-            System.out.println(name + " готов плыть, запас выносливоти = " + swimTired);
+            System.out.println(name + " готов плыть, запас выносливости " + swimTired);
         }
     }
 
