@@ -10,10 +10,15 @@ public class AnimalMain {
 
         Cat cat = new Cat("Kruzik", 1, 0, 100, 1, 0);
         Dog dog = new Dog("Buddy", 3, 1, 300, 1,2);
-        Horse horse = new Horse("Spirit", 10, 3, 3000,1,4);
+        Horse horse = new Horse("Spirit", 10, 3, 30000,1,4);
 
         System.out.printf("время: %.2f cек%n",cat.run(100));
         System.out.printf("время: %.2f cек%n",dog.run(100));
         System.out.printf("время: %.2f cек%n",horse.run(1000));
+        System.out.println();
+        System.out.printf("время: %.2f cек%n",cat.swim(100));
+        System.out.printf("время: %.2f cек%n",dog.swim(100));
+        System.out.printf("время: %.2f cек%n",horse.swim(1000));
+
     }
 }
