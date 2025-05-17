@@ -30,6 +30,9 @@ public class Animal {
         this.runSpeed = runSpeed;
         this.swimSpeed = swimSpeed;
         this.endurance = endurance;
+        if (endurance < 0) {
+
+        }
         this.runEnduranceCosts = runEnduranceCosts;
         this.swimEnduranceCosts = swimEnduranceCosts;
     }
@@ -38,7 +41,7 @@ public class Animal {
         int enduranceCosts = distance * runEnduranceCosts;
         float time = distance / runSpeed;
         this.endurance = endurance - enduranceCosts;
-        if (endurance >= 0) {
+        if (endurance >= 1) {
             System.out.print(name + " пробежал " + distance + " м, ");
             return time;
         } else {
@@ -51,7 +54,7 @@ public class Animal {
         int enduranceCosts = distance * swimEnduranceCosts;
         float time = distance / swimSpeed;
         this.endurance = endurance - enduranceCosts;
-        if (endurance >= 0) {
+        if (endurance >= 2 && endurance >= 4) {
             System.out.print(name + " проплыл " + distance + " м, ");
             return time;
         } else {
@@ -63,7 +66,7 @@ public class Animal {
     public void info() {
         if (endurance > 0) {
             System.out.println(name + ": запас выносливости = " + endurance + ", может бежать или плыть");
-        }else {
+        } else {
             System.out.println(name + ": запас выносливости исчерпан, не может бежать или плыть");
         }
     }

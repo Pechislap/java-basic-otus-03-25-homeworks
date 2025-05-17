@@ -12,8 +12,8 @@ public class AnimalMain {
         Dog dog = new Dog("Buddy", 3, 1, 300, 1,2);
         Horse horse = new Horse("Spirit", 10, 3, 30000,1,4);
 
-        System.out.printf("время: %.2f cек%n",cat.run(100));
-        System.out.printf("время: %.2f cек%n",dog.run(100));
+        System.out.printf("время: %.2f cек%n",cat.run(10));
+        System.out.printf("время: %.2f cек%n",dog.run(50));
         System.out.printf("время: %.2f cек%n",horse.run(1000));
 
         System.out.printf("время: %.2f cек%n",cat.swim(100));
