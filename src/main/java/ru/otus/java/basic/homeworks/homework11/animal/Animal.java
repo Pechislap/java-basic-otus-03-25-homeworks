@@ -22,7 +22,9 @@ public class Animal {
     }
 
     public void setEndurance(int endurance) {
-        this.endurance = endurance;
+        if (endurance < 0) {
+            this.endurance = 0;
+        }
     }
 
     public Animal(String name, float runSpeed, float swimSpeed, int endurance, int runEnduranceCosts, int swimEnduranceCosts) {
@@ -30,9 +32,6 @@ public class Animal {
         this.runSpeed = runSpeed;
         this.swimSpeed = swimSpeed;
         this.endurance = endurance;
-        if (endurance < 0) {
-
-        }
         this.runEnduranceCosts = runEnduranceCosts;
         this.swimEnduranceCosts = swimEnduranceCosts;
     }

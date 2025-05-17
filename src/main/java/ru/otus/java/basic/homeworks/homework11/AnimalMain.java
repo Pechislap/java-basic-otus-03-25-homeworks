@@ -24,5 +24,7 @@ public class AnimalMain {
         dog.info();
         horse.info();
 
+
+
     }
 }
