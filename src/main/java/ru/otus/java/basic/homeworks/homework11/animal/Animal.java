@@ -24,6 +24,8 @@ public class Animal {
     public void setEndurance(int endurance) {
         if (endurance < 0) {
             this.endurance = 0;
+        } else {
+            this.endurance = endurance;
         }
     }
 
