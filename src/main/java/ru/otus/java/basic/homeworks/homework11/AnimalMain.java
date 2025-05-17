@@ -15,10 +15,14 @@ public class AnimalMain {
         System.out.printf("время: %.2f cек%n",cat.run(100));
         System.out.printf("время: %.2f cек%n",dog.run(100));
         System.out.printf("время: %.2f cек%n",horse.run(1000));
-        System.out.println();
+
         System.out.printf("время: %.2f cек%n",cat.swim(100));
         System.out.printf("время: %.2f cек%n",dog.swim(100));
         System.out.printf("время: %.2f cек%n",horse.swim(1000));
+
+        cat.info();
+        dog.info();
+        horse.info();
 
     }
 }

@@ -12,4 +12,13 @@ public class Cat extends Animal {
         }
         return -1;
     }
+
+    @Override
+    public void info() {
+        if (endurance >= 1) {
+            System.out.println(name + ": запас выносливости = " + endurance + ", может бежать, плавать не умеет");
+        }else {
+            System.out.println(name + ": запас выносливости исчерпан, не может бежать, плавать не умеет");
+        }
+    }
 }
