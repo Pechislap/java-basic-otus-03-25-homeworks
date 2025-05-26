@@ -1,7 +1,7 @@
 package ru.otus.java.basic.homeworks.homework13.theArea;
 
+import ru.otus.java.basic.homeworks.homework13.Human;
 import ru.otus.java.basic.homeworks.homework13.transport.MeansOfTransportation;
-import ru.otus.java.basic.homeworks.homework13.transport.*;
 
 public class Plain implements Area {
     private int length;

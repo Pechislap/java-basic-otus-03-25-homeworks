@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework13.transport;
 
+import ru.otus.java.basic.homeworks.homework13.Human;
+
 public class Rover implements MeansOfTransportation {
     private String name;
     private float fuel;

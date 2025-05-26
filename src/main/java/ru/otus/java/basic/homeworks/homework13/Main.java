@@ -20,13 +20,15 @@ public class Main {
         human.takeTransport(Transport.Car);
         human.leaveTransport(Transport.Car);
         human.leaveTransport(Transport.Rover);
+        human.movementForest(2000);
+        human.movementPlain(2000);
+        human.movementSwamp(1000);
 
         MeansOfTransportation[] m = {
                 new Horse("Spirit"),
                 new Bicycle("Bicycle"),
                 new Rover("Rover"),
                 new Car("Car"),
-                new Human("Bob")
         };
 
         Area[] a = {

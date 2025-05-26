@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework13.transport;
 
+import ru.otus.java.basic.homeworks.homework13.Human;
+
 public class Horse implements MeansOfTransportation {
     private String name;
     private final int enduranceMovementThroughForest;
@@ -42,13 +44,12 @@ public class Horse implements MeansOfTransportation {
             endurance = 0;
             System.out.println(getName() + " не смог преодолеть густой лес, устал");
             human.leaveTransport(Transport.Spirit);
-            //return false;
+            return false;
         } else {
             System.out.println(getName() + " преодолел густой лес");
             human.leaveTransport(Transport.Spirit);
-            //return true;
+            return true;
         }
-        return false;
     }
 
     @Override

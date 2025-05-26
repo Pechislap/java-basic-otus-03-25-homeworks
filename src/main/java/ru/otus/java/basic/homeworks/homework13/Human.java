@@ -1,7 +1,9 @@
-package ru.otus.java.basic.homeworks.homework13.transport;
+package ru.otus.java.basic.homeworks.homework13;
 
 
-public class Human implements MeansOfTransportation {
+import ru.otus.java.basic.homeworks.homework13.transport.Transport;
+
+public class Human {
 
     private String name;
 
@@ -73,8 +75,7 @@ public class Human implements MeansOfTransportation {
         return false;
     }
 
-    @Override
-    public boolean movementForest(int distance, Human human) {
+    public boolean movementForest(int distance) {
         endurance -= distance * enduranceMovementThroughForest;
         if (getCurrentTransport() == null) {
             if (endurance < 0) {
@@ -88,8 +89,7 @@ public class Human implements MeansOfTransportation {
         return true;
     }
 
-    @Override
-    public boolean movementPlain(int distance, Human human) {
+    public boolean movementPlain(int distance) {
         endurance -= distance * enduranceMovementAcrossPlain;
         if (getCurrentTransport() == null) {
             if (endurance < 0) {
@@ -103,8 +103,7 @@ public class Human implements MeansOfTransportation {
         return true;
     }
 
-    @Override
-    public boolean movementSwamp(int distance, Human human) {
+    public boolean movementSwamp(int distance) {
         endurance -= distance * enduranceMovementThroughSwamp;
         if (getCurrentTransport() == null) {
             if (endurance < 0) {
