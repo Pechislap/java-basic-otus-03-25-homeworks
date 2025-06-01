@@ -5,7 +5,7 @@ import ru.otus.java.basic.homeworks.homework15.exception.AppArraySizeException;
 
 import static ru.otus.java.basic.homeworks.homework15.Array.sumArrayElements;
 
-public class Main {
+public class ArrayMain {
     public static void main(String[] args) {
         String[][] correctArray = {
                 {"1", "8", "13", "4"},
