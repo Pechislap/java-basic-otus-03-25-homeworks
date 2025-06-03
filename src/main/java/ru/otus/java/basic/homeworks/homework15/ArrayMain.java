@@ -8,7 +8,7 @@ import static ru.otus.java.basic.homeworks.homework15.Array.sumArrayElements;
 public class ArrayMain {
     public static void main(String[] args) {
         String[][] correctArray = {
-                {"1", "8", "13", "4"},
+                {"1", "8", "3", "4"},
                 {"4", "16", "8", "8"},
                 {"0", "1", "11", "52"},
                 {"13", "9", "10", "16"}
@@ -46,5 +46,5 @@ public class ArrayMain {
         } catch (AppArraySizeException | AppArrayDataException e) {
             System.err.println(e.getMessage());
         }
-    }
+   }
 }
