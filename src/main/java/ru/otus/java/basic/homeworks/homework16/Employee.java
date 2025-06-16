@@ -42,18 +42,16 @@ public class Employee {
 
     public static boolean averageAge(List<Employee> employees, int minAverageAge) {
 
+        if (employees.isEmpty()) {
+            return false;
+        }
+
         int totalAge = 0;
         for (Employee employee : employees) {
             totalAge += employee.getAge();
         }
         int averageAge = totalAge / employees.size();
-        if (averageAge > minAverageAge) {
-            System.out.println("Средний возраст сотрудников превышает " + minAverageAge + " лет");
-            return true;
-        } else {
-            System.out.println("Средний возраст сотрудников не превышает " + minAverageAge + " лет");
-            return false;
-        }
+        return averageAge > minAverageAge;
     }
 
     public static Employee youngestEmployee(List<Employee> employees) {
